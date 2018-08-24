@@ -1,0 +1,15 @@
+2018-08-23 10:38:56,974[INFO][1]MyLog 发送短信成功:监控程序启动
+2018-08-23 10:38:57,079[INFO][1]MyLog 监控程序启动
+2018-08-23 10:38:57,207[ERROR][1]MyLog 检索 COM 类工厂中 CLSID 为 {28E68F9A-8D75-11D1-8DC3-3C302A000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。
+System.Runtime.InteropServices.COMException (0x80040154): 检索 COM 类工厂中 CLSID 为 {28E68F9A-8D75-11D1-8DC3-3C302A000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。
+   在 System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   在 System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   在 System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   在 System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   在 System.Activator.CreateInstance(Type type)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\lwq\0615\OPCMonitor\OPCMonitor\MainForm.cs:行号 111
+   在 WHChem.OPCMonitor.MainForm.InitClient() 位置 e:\lwq\0615\OPCMonitor\OPCMonitor\MainForm.cs:行号 96
+   在 WHChem.OPCMonitor.MainForm.MainForm_Load(Object sender, EventArgs e) 位置 e:\lwq\0615\OPCMonitor\OPCMonitor\MainForm.cs:行号 76
+2018-08-23 10:38:57,488[INFO][1]MyLog 错误：检索 COM 类工厂中 CLSID 为 {28E68F9A-8D75-11D1-8DC3-3C302A000000} 的组件失败，原因是出现以下错误: 80040154 没有注册类 (异常来自 HRESULT:0x80040154 (REGDB_E_CLASSNOTREG))。
+2018-08-23 10:39:08,465[INFO][1]MyLog 发送短信成功:监控程序关闭
+2018-08-23 10:39:08,558[INFO][1]MyLog 监控程序关闭

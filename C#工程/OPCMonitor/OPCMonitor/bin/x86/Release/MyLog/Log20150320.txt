@@ -1,0 +1,134 @@
+2015-03-20 12:55:51,202[INFO][10]MyLog 发送短信成功:监控程序启动
+2015-03-20 12:55:51,210[INFO][10]MyLog 监控程序启动
+2015-03-20 12:55:51,785[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:55:51,788[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:55:56,368[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:55:56,369[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:55:56,387[INFO][10]MyLog 发送短信成功:OPC服务器10.12.100.79：第2次 连接失败.
+2015-03-20 12:56:01,305[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:01,325[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:01,342[INFO][10]MyLog 发送短信成功:OPC服务器10.12.100.79：第3次 连接失败.已达到提醒上限值，不再提醒连接失败。恢复连接后再次提醒。
+2015-03-20 12:56:06,283[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:06,285[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:11,294[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:11,296[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:16,299[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:16,301[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:21,383[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:21,384[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:26,311[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:26,312[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:31,359[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:31,361[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:36,329[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:36,330[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:41,334[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:41,335[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:46,342[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:46,344[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:51,373[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:51,376[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:56:56,348[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:56:56,349[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:01,748[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:01,749[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:06,390[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:06,391[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:11,354[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:11,355[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:16,387[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:16,396[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:21,384[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:21,385[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:26,402[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:26,405[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:31,414[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:31,416[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:36,427[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:36,429[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:41,428[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:41,430[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:46,439[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:46,440[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:51,441[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:51,442[INFO][10]MyLog 连接OPC服务器失败
+2015-03-20 12:57:56,448[ERROR][10]MyLog 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+System.Runtime.InteropServices.COMException (0x80004005): 对 COM 组件的调用返回了错误 HRESULT E_FAIL。
+   在 OPCAutomation.IOPCAutoServer.Connect(String ProgID, Object Node)
+   在 WHChem.OPCMonitor.MainForm.ConnectOPCServer() 位置 e:\ECP\ECP\devlop\OPCMonitor\OPCMonitor\MainForm.cs:行号 114
+2015-03-20 12:57:56,450[INFO][10]MyLog 连接OPC服务器失败

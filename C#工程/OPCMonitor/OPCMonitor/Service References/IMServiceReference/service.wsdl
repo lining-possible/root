@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FcsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IFcsService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WHFCS.Server.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFcsService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendMes_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendMes" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendMes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendMesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendFire_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendFire" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendFire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendFireResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendAddPlot_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendAddPlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendAddPlot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendAddPlotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelPlot_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelPlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelPlot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelPlotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelAllPlot_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelAllPlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelAllPlot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelAllPlotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendAlarm_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendAlarm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelAlarm_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendDelAlarm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendDelAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendCloseGIS_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendCloseGIS" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_SendCloseGIS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendCloseGISResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveMessage_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveMessage" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveWeather_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveWeather" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveAddPlot_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveAddPlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveDeletePlot_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveDeletePlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveDeleteAllPlot_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveDeleteAllPlot" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveAlarm_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IFcsService_ReciveDelAlarm_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:ReciveDelAlarm" />
+  </wsdl:message>
+  <wsdl:portType name="IFcsService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/Login" message="tns:IFcsService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/LoginResponse" message="tns:IFcsService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendMessage" message="tns:IFcsService_SendMessage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendMessageResponse" message="tns:IFcsService_SendMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendMes" message="tns:IFcsService_SendMes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendMesResponse" message="tns:IFcsService_SendMes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendFire">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendFire" message="tns:IFcsService_SendFire_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendFireResponse" message="tns:IFcsService_SendFire_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAddPlot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendAddPlot" message="tns:IFcsService_SendAddPlot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendAddPlotResponse" message="tns:IFcsService_SendAddPlot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDelPlot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendDelPlot" message="tns:IFcsService_SendDelPlot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendDelPlotResponse" message="tns:IFcsService_SendDelPlot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDelAllPlot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendDelAllPlot" message="tns:IFcsService_SendDelAllPlot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendDelAllPlotResponse" message="tns:IFcsService_SendDelAllPlot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendAlarm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendAlarm" message="tns:IFcsService_SendAlarm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendAlarmResponse" message="tns:IFcsService_SendAlarm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendDelAlarm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendDelAlarm" message="tns:IFcsService_SendDelAlarm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendDelAlarmResponse" message="tns:IFcsService_SendDelAlarm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCloseGIS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFcsService/SendCloseGIS" message="tns:IFcsService_SendCloseGIS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/SendCloseGISResponse" message="tns:IFcsService_SendCloseGIS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveMessage">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveMessage" message="tns:IFcsService_ReciveMessage_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveWeather">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveWeather" message="tns:IFcsService_ReciveWeather_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveAddPlot">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveAddPlot" message="tns:IFcsService_ReciveAddPlot_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDeletePlot">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveDeletePlot" message="tns:IFcsService_ReciveDeletePlot_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDeleteAllPlot">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveDeleteAllPlot" message="tns:IFcsService_ReciveDeleteAllPlot_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveAlarm">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveAlarm" message="tns:IFcsService_ReciveAlarm_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDelAlarm">
+      <wsdl:output wsaw:Action="http://tempuri.org/IFcsService/ReciveDelAlarm" message="tns:IFcsService_ReciveDelAlarm_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IFcsService" type="tns:IFcsService">
+    <wsp:PolicyReference URI="#NetTcpBinding_IFcsService_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMes">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendMes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendFire">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendFire" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAddPlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendAddPlot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDelPlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendDelPlot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDelAllPlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendDelAllPlot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendAlarm">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendAlarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendDelAlarm">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendDelAlarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCloseGIS">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/SendCloseGIS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveMessage">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveMessage" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveWeather">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveWeather" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveAddPlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveAddPlot" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDeletePlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveDeletePlot" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDeleteAllPlot">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveDeleteAllPlot" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveAlarm">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveAlarm" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReciveDelAlarm">
+      <soap12:operation soapAction="http://tempuri.org/IFcsService/ReciveDelAlarm" style="document" />
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FcsService">
+    <wsdl:port name="NetTcpBinding_IFcsService" binding="tns:NetTcpBinding_IFcsService">
+      <soap12:address location="net.tcp://localhost:4507/FcsService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:4507/FcsService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

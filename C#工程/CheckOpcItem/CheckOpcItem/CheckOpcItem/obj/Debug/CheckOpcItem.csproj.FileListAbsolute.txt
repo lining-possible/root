@@ -1,0 +1,6 @@
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\bin\Debug\CheckOpcItem.exe.config
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\bin\Debug\CheckOpcItem.exe
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\bin\Debug\CheckOpcItem.pdb
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.exe
+C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.pdb

@@ -1,0 +1,54 @@
+JEasyOPC 2.3.2 release
+----------------------
+
+INFO: Java library of OPC-Client (OPCDA 2.0, 3.0).
+
+Releases
+--------
+Release 2.0.0:
+--------------
+Included:
+- Synch read/write opc-items
+- Asynch reading opc-groups (1.0 and 2.0)
+- Controls activity and updateTime of groups and items
+- Handles all exceptions from native code
+- OPCBrowser and OPCEnum components
+- Multilanguages support
+- Log events (custom logger) and standard logging with log4j
+- Example: JEasyOPC -> asynch opc-client implementation
+
+release (2.1.0):
+----------------
+- Synch reading of groups
+- JUnit tests and examples
+- Errorcorrections
+
+release (2.2.0):
+----------------
+- OPC Data Types, support of Variant type
+- Support of Variant arrays transmission (read/write)
+- Asynchronous listeners on Opc Group instances
+- Hierarchic exceptions system
+Bug Fixes:
+- Remove CoUninitialize from getOpcServers() method on JOpcBrowser
+- Change fix library path to properties variable: library.path
+
+release (2.3.0):
+----------------
+- User manual (html) + UML models
+- Improvement of logging system: Usage of Jakarta Common Logging
+
+release (2.3.1):
+----------------
+- Error Correction: Memory leak (ID: 1606657)
+
+ACTUAL release (2.3.2):
+-----------------------
+- Error Correction: Multi-thread support
+- resources for PT
+- small "cosmetics" bugs
+
+next release (2.4.0)
+--------------------
+- Improvement of JOpcBrowser class
+- Addition of Groups and Items methods: equals, hashcode, compareTo, Comparator.
