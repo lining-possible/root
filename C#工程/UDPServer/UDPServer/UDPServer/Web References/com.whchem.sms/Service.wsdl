@@ -1,0 +1,1797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="TKSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TKSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TKSendResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSOfInterface">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSOfInterfaceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSOfInterfaceResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendShortSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendShortSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendShortSMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLongSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendLongSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendLongSMSResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TKReceiveSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TKReceiveSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TKReceiveSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMessageResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="receiveMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="receiveMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="receiveMessageResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSOfInterfaceByTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TelList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SendTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSOfInterfaceByTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendSMSOfInterfaceByTimeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YDMessageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="YDMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="YDMessageListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LTMessageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LTMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LTMessageListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DXMessageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DXMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DXMessageListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TKMessageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TKMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TKMessageListResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTkSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTkSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTkSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLtSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLtSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddLtSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddYdSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddYdSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddYdSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDxSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDxSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddDxSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsYdSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SmsID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsYdSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="smsYdSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsDxSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SmsID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsDxSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="smsDxSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsLtSendResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TelNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Content" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Scount" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="SmsID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="smsLtSendResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="smsLtSendResultResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TKSendSoapIn">
+    <wsdl:part name="parameters" element="tns:TKSend" />
+  </wsdl:message>
+  <wsdl:message name="TKSendSoapOut">
+    <wsdl:part name="parameters" element="tns:TKSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSOfInterface" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSOfInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendShortSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendShortSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendLongSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendLongSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:TKReceiveSMS" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:TKReceiveSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMessage" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:receiveMessage" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:receiveMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSOfInterfaceByTime" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSOfInterfaceByTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:YDMessageList" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:YDMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:LTMessageList" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:LTMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:DXMessageList" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:DXMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:TKMessageList" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:TKMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTkSendResult" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTkSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:AddLtSendResult" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:AddLtSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:AddYdSendResult" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:AddYdSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:AddDxSendResult" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDxSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="testSoapIn">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="testSoapOut">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:smsYdSendResult" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:smsYdSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:smsDxSendResult" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:smsDxSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultSoapIn">
+    <wsdl:part name="parameters" element="tns:smsLtSendResult" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultSoapOut">
+    <wsdl:part name="parameters" element="tns:smsLtSendResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="TKSendHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpGetIn">
+    <wsdl:part name="tel" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageHttpGetIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="tel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeHttpGetIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="SendTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="testHttpGetIn">
+    <wsdl:part name="tel" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultHttpGetIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="TKSendHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendShortSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendLongSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKReceiveSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpPostIn">
+    <wsdl:part name="tel" type="s:string" />
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendMessageHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageHttpPostIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="tel" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="receiveMessageHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeHttpPostIn">
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="PassWord" type="s:string" />
+    <wsdl:part name="TelList" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="SendTime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSOfInterfaceByTimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="YDMessageListHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LTMessageListHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DXMessageListHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TKMessageListHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddTkSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddLtSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddYdSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddDxSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="testHttpPostIn">
+    <wsdl:part name="tel" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="testHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsYdSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsDxSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultHttpPostIn">
+    <wsdl:part name="TelNumber" type="s:string" />
+    <wsdl:part name="Content" type="s:string" />
+    <wsdl:part name="Result" type="s:string" />
+    <wsdl:part name="Scount" type="s:string" />
+    <wsdl:part name="UserID" type="s:string" />
+    <wsdl:part name="SmsID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="smsLtSendResultHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="TKSend">
+      <wsdl:input message="tns:TKSendSoapIn" />
+      <wsdl:output message="tns:TKSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <wsdl:input message="tns:SendSMSOfInterfaceSoapIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <wsdl:input message="tns:SendShortSMSSoapIn" />
+      <wsdl:output message="tns:SendShortSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <wsdl:input message="tns:SendLongSMSSoapIn" />
+      <wsdl:output message="tns:SendLongSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <wsdl:input message="tns:TKReceiveSMSSoapIn" />
+      <wsdl:output message="tns:TKReceiveSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageSoapIn" />
+      <wsdl:output message="tns:SendMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <wsdl:input message="tns:receiveMessageSoapIn" />
+      <wsdl:output message="tns:receiveMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <wsdl:input message="tns:SendSMSOfInterfaceByTimeSoapIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceByTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <wsdl:input message="tns:YDMessageListSoapIn" />
+      <wsdl:output message="tns:YDMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <wsdl:input message="tns:LTMessageListSoapIn" />
+      <wsdl:output message="tns:LTMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <wsdl:input message="tns:DXMessageListSoapIn" />
+      <wsdl:output message="tns:DXMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <wsdl:input message="tns:TKMessageListSoapIn" />
+      <wsdl:output message="tns:TKMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <wsdl:input message="tns:AddTkSendResultSoapIn" />
+      <wsdl:output message="tns:AddTkSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <wsdl:input message="tns:AddLtSendResultSoapIn" />
+      <wsdl:output message="tns:AddLtSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <wsdl:input message="tns:AddYdSendResultSoapIn" />
+      <wsdl:output message="tns:AddYdSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <wsdl:input message="tns:AddDxSendResultSoapIn" />
+      <wsdl:output message="tns:AddDxSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testSoapIn" />
+      <wsdl:output message="tns:testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <wsdl:input message="tns:smsYdSendResultSoapIn" />
+      <wsdl:output message="tns:smsYdSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <wsdl:input message="tns:smsDxSendResultSoapIn" />
+      <wsdl:output message="tns:smsDxSendResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <wsdl:input message="tns:smsLtSendResultSoapIn" />
+      <wsdl:output message="tns:smsLtSendResultSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="TKSend">
+      <wsdl:input message="tns:TKSendHttpGetIn" />
+      <wsdl:output message="tns:TKSendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <wsdl:input message="tns:SendSMSOfInterfaceHttpGetIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <wsdl:input message="tns:SendShortSMSHttpGetIn" />
+      <wsdl:output message="tns:SendShortSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <wsdl:input message="tns:SendLongSMSHttpGetIn" />
+      <wsdl:output message="tns:SendLongSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <wsdl:input message="tns:TKReceiveSMSHttpGetIn" />
+      <wsdl:output message="tns:TKReceiveSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageHttpGetIn" />
+      <wsdl:output message="tns:SendMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <wsdl:input message="tns:receiveMessageHttpGetIn" />
+      <wsdl:output message="tns:receiveMessageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <wsdl:input message="tns:SendSMSOfInterfaceByTimeHttpGetIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceByTimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <wsdl:input message="tns:YDMessageListHttpGetIn" />
+      <wsdl:output message="tns:YDMessageListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <wsdl:input message="tns:LTMessageListHttpGetIn" />
+      <wsdl:output message="tns:LTMessageListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <wsdl:input message="tns:DXMessageListHttpGetIn" />
+      <wsdl:output message="tns:DXMessageListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <wsdl:input message="tns:TKMessageListHttpGetIn" />
+      <wsdl:output message="tns:TKMessageListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <wsdl:input message="tns:AddTkSendResultHttpGetIn" />
+      <wsdl:output message="tns:AddTkSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <wsdl:input message="tns:AddLtSendResultHttpGetIn" />
+      <wsdl:output message="tns:AddLtSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <wsdl:input message="tns:AddYdSendResultHttpGetIn" />
+      <wsdl:output message="tns:AddYdSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <wsdl:input message="tns:AddDxSendResultHttpGetIn" />
+      <wsdl:output message="tns:AddDxSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testHttpGetIn" />
+      <wsdl:output message="tns:testHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <wsdl:input message="tns:smsYdSendResultHttpGetIn" />
+      <wsdl:output message="tns:smsYdSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <wsdl:input message="tns:smsDxSendResultHttpGetIn" />
+      <wsdl:output message="tns:smsDxSendResultHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <wsdl:input message="tns:smsLtSendResultHttpGetIn" />
+      <wsdl:output message="tns:smsLtSendResultHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="TKSend">
+      <wsdl:input message="tns:TKSendHttpPostIn" />
+      <wsdl:output message="tns:TKSendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <wsdl:input message="tns:SendSMSOfInterfaceHttpPostIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <wsdl:input message="tns:SendShortSMSHttpPostIn" />
+      <wsdl:output message="tns:SendShortSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <wsdl:input message="tns:SendLongSMSHttpPostIn" />
+      <wsdl:output message="tns:SendLongSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <wsdl:input message="tns:TKReceiveSMSHttpPostIn" />
+      <wsdl:output message="tns:TKReceiveSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <wsdl:input message="tns:SendMessageHttpPostIn" />
+      <wsdl:output message="tns:SendMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <wsdl:input message="tns:receiveMessageHttpPostIn" />
+      <wsdl:output message="tns:receiveMessageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <wsdl:input message="tns:SendSMSOfInterfaceByTimeHttpPostIn" />
+      <wsdl:output message="tns:SendSMSOfInterfaceByTimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <wsdl:input message="tns:YDMessageListHttpPostIn" />
+      <wsdl:output message="tns:YDMessageListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <wsdl:input message="tns:LTMessageListHttpPostIn" />
+      <wsdl:output message="tns:LTMessageListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <wsdl:input message="tns:DXMessageListHttpPostIn" />
+      <wsdl:output message="tns:DXMessageListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <wsdl:input message="tns:TKMessageListHttpPostIn" />
+      <wsdl:output message="tns:TKMessageListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <wsdl:input message="tns:AddTkSendResultHttpPostIn" />
+      <wsdl:output message="tns:AddTkSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <wsdl:input message="tns:AddLtSendResultHttpPostIn" />
+      <wsdl:output message="tns:AddLtSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <wsdl:input message="tns:AddYdSendResultHttpPostIn" />
+      <wsdl:output message="tns:AddYdSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <wsdl:input message="tns:AddDxSendResultHttpPostIn" />
+      <wsdl:output message="tns:AddDxSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testHttpPostIn" />
+      <wsdl:output message="tns:testHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <wsdl:input message="tns:smsYdSendResultHttpPostIn" />
+      <wsdl:output message="tns:smsYdSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <wsdl:input message="tns:smsDxSendResultHttpPostIn" />
+      <wsdl:output message="tns:smsDxSendResultHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <wsdl:input message="tns:smsLtSendResultHttpPostIn" />
+      <wsdl:output message="tns:smsLtSendResultHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TKSend">
+      <soap:operation soapAction="http://tempuri.org/TKSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <soap:operation soapAction="http://tempuri.org/SendSMSOfInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <soap:operation soapAction="http://tempuri.org/SendShortSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <soap:operation soapAction="http://tempuri.org/SendLongSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <soap:operation soapAction="http://tempuri.org/TKReceiveSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap:operation soapAction="http://tempuri.org/SendMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <soap:operation soapAction="http://tempuri.org/receiveMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <soap:operation soapAction="http://tempuri.org/SendSMSOfInterfaceByTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <soap:operation soapAction="http://tempuri.org/YDMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <soap:operation soapAction="http://tempuri.org/LTMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <soap:operation soapAction="http://tempuri.org/DXMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <soap:operation soapAction="http://tempuri.org/TKMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <soap:operation soapAction="http://tempuri.org/AddTkSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <soap:operation soapAction="http://tempuri.org/AddLtSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <soap:operation soapAction="http://tempuri.org/AddYdSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <soap:operation soapAction="http://tempuri.org/AddDxSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <soap:operation soapAction="http://tempuri.org/smsYdSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <soap:operation soapAction="http://tempuri.org/smsDxSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <soap:operation soapAction="http://tempuri.org/smsLtSendResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TKSend">
+      <soap12:operation soapAction="http://tempuri.org/TKSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSOfInterface" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendShortSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendLongSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <soap12:operation soapAction="http://tempuri.org/TKReceiveSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <soap12:operation soapAction="http://tempuri.org/SendMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <soap12:operation soapAction="http://tempuri.org/receiveMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSOfInterfaceByTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <soap12:operation soapAction="http://tempuri.org/YDMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <soap12:operation soapAction="http://tempuri.org/LTMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <soap12:operation soapAction="http://tempuri.org/DXMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <soap12:operation soapAction="http://tempuri.org/TKMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <soap12:operation soapAction="http://tempuri.org/AddTkSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <soap12:operation soapAction="http://tempuri.org/AddLtSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <soap12:operation soapAction="http://tempuri.org/AddYdSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <soap12:operation soapAction="http://tempuri.org/AddDxSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap12:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <soap12:operation soapAction="http://tempuri.org/smsYdSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <soap12:operation soapAction="http://tempuri.org/smsDxSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <soap12:operation soapAction="http://tempuri.org/smsLtSendResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="TKSend">
+      <http:operation location="/TKSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <http:operation location="/SendSMSOfInterface" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <http:operation location="/SendShortSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <http:operation location="/SendLongSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <http:operation location="/TKReceiveSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <http:operation location="/SendMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <http:operation location="/receiveMessage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <http:operation location="/SendSMSOfInterfaceByTime" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <http:operation location="/YDMessageList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <http:operation location="/LTMessageList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <http:operation location="/DXMessageList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <http:operation location="/TKMessageList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <http:operation location="/AddTkSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <http:operation location="/AddLtSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <http:operation location="/AddYdSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <http:operation location="/AddDxSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <http:operation location="/test" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <http:operation location="/smsYdSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <http:operation location="/smsDxSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <http:operation location="/smsLtSendResult" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="TKSend">
+      <http:operation location="/TKSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterface">
+      <http:operation location="/SendSMSOfInterface" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendShortSMS">
+      <http:operation location="/SendShortSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendLongSMS">
+      <http:operation location="/SendLongSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKReceiveSMS">
+      <http:operation location="/TKReceiveSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMessage">
+      <http:operation location="/SendMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveMessage">
+      <http:operation location="/receiveMessage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSOfInterfaceByTime">
+      <http:operation location="/SendSMSOfInterfaceByTime" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="YDMessageList">
+      <http:operation location="/YDMessageList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LTMessageList">
+      <http:operation location="/LTMessageList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DXMessageList">
+      <http:operation location="/DXMessageList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TKMessageList">
+      <http:operation location="/TKMessageList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTkSendResult">
+      <http:operation location="/AddTkSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLtSendResult">
+      <http:operation location="/AddLtSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddYdSendResult">
+      <http:operation location="/AddYdSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddDxSendResult">
+      <http:operation location="/AddDxSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <http:operation location="/test" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsYdSendResult">
+      <http:operation location="/smsYdSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsDxSendResult">
+      <http:operation location="/smsDxSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="smsLtSendResult">
+      <http:operation location="/smsLtSendResult" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://sms.whchem.com/Service/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://sms.whchem.com/Service/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://sms.whchem.com/Service/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://sms.whchem.com/Service/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

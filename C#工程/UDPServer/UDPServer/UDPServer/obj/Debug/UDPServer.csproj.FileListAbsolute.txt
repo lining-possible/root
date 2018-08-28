@@ -1,0 +1,7 @@
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\bin\Debug\UDPServer.exe.config
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\bin\Debug\UDPServer.exe
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\bin\Debug\UDPServer.pdb
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\bin\Debug\Newtonsoft.Json.dll
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\obj\Debug\UDPServer.csprojResolveAssemblyReference.cache
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\obj\Debug\UDPServer.exe
+E:\GitProgect\root\C#工程\UDPServer\UDPServer\UDPServer\obj\Debug\UDPServer.pdb
