@@ -48,12 +48,20 @@ namespace UDPServer
                    // Console.WriteLine(string.Format("{0} 收到來自{1}的消息：{2}", datetime, ipport, message));
 
                     //将接收的心跳交给ManageVarThread线程处理
-                    JObject jo = (JObject)JsonConvert.DeserializeObject(message);
-                    Kid kid = new Kid(IP + jo["name"].ToString(), jo["name"].ToString(), int.Parse(jo["period"].ToString()), jo["message"].ToString(), IP, Port);
-                    ManageVarThread manV = new ManageVarThread();
-                    manV.kid = kid;
-                    Thread man = new Thread(manV.test);
-                    man.Start();
+                    try
+                    {
+                        JObject jo = (JObject)JsonConvert.DeserializeObject(message);
+                        Kid kid = new Kid(IP + jo["name"].ToString(), jo["name"].ToString(), int.Parse(jo["period"].ToString()), jo["message"].ToString(), IP, Port);
+                        ManageVarThread manV = new ManageVarThread();
+                        manV.kid = kid;
+                        Thread man = new Thread(manV.test);
+                        man.Start();
+                    }
+                    catch(Exception e){ 
+                        //Console.WriteLine( e.Message);
+                    }
+
+                    
 
                 }
                 udpServer.Close();
