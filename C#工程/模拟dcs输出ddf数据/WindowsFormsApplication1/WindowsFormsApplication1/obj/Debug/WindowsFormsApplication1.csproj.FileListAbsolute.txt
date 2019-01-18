@@ -1,0 +1,8 @@
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\GitProgect\root\C#工程\模拟dcs输出ddf数据\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -25,3 +25,6 @@ C:\Users\ecpopcuser\Documents\Visual Studio 2012\Projects\OpcDataCollect0910_2\O
 C:\Users\ecpopcuser\Documents\Visual Studio 2012\Projects\OpcDataCollect0910_2\OPC_DC_Forms\obj\Debug\OPC_DC_Forms.Form1.resources
 C:\Users\ecpopcuser\Documents\Visual Studio 2012\Projects\OpcDataCollect0910_2\OPC_DC_Forms\obj\Debug\OPC_DC_Forms.Properties.Resources.resources
 C:\Users\ecpopcuser\Documents\Visual Studio 2012\Projects\OpcDataCollect0910_2\OPC_DC_Forms\obj\Debug\OPC_DC_Forms.csproj.GenerateResource.Cache
+E:\GitProgect\root\C#工程\OpcDataCollect0910_2（success）\OPC_DC_Forms\bin\Debug\OPC_DC_Forms.exe.config
+E:\GitProgect\root\C#工程\OpcDataCollect0910_2（success）\OPC_DC_Forms\obj\Debug\OPC_DC_Forms.exe
+E:\GitProgect\root\C#工程\OpcDataCollect0910_2（success）\OPC_DC_Forms\obj\Debug\OPC_DC_Forms.pdb

@@ -4,6 +4,7 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -51,15 +52,24 @@ public class QueryAndSendMessage {
             //String sql = "select * from sm_role";
             String sql = "SELECT count(*) as num FROM bt_alarm_auto bt where bt.receive_time > to_date('2018-05-01 13:14:20','yyyy-MM-dd HH24:mi:ss')  and bt.receive_time < to_date('2018-06-01 13:14:20','yyyy-MM-dd HH24:mi:ss')  and bt.unit_code='10'";
 
-            Calendar   c   =   Calendar.getInstance();//可以用set()对每个时间域单独
-            c.add(Calendar.MONTH,1);
-            String nowtime = Data2Str(c);
-            c.add(Calendar.HOUR,-8);
-            String nowtime8 = Data2Str(c);
-            c.add(Calendar.HOUR,-8);
-            String nowtime16 = Data2Str(c);
-            c.add(Calendar.HOUR,-8);
-            String nowtime24 = Data2Str(c);
+            Date cur = new Date();
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String nowtime = sdf.format(cur);
+
+            Calendar curDate = Calendar.getInstance();
+            curDate.setTime(cur);
+            curDate.add(Calendar.HOUR,-8);
+            Date cur2 = curDate.getTime();
+            String nowtime8=sdf.format(cur2);
+            curDate.add(Calendar.HOUR,-8);
+            Date cur3 = curDate.getTime();
+            String nowtime16=sdf.format(cur3);
+            curDate.add(Calendar.HOUR,-8);
+            Date cur4 = curDate.getTime();
+            String nowtime24=sdf.format(cur4);
+
+
+
             String sqlmesYT1 = "SELECT count(*) as num FROM bt_alarm_auto bt where bt.receive_time > to_date('"+ nowtime24+"','yyyy-MM-dd HH24:mi:ss')  and bt.receive_time < to_date('"+nowtime16+"','yyyy-MM-dd HH24:mi:ss')  and bt.unit_code='10' and ALARM_TYPE='1'";
             String sqlmesYT2 = "SELECT count(*) as num FROM bt_alarm_auto bt where bt.receive_time > to_date('"+ nowtime16+"','yyyy-MM-dd HH24:mi:ss')  and bt.receive_time < to_date('"+nowtime8+"','yyyy-MM-dd HH24:mi:ss')  and bt.unit_code='10' and ALARM_TYPE='1'";
             String sqlmesYT3 = "SELECT count(*) as num FROM bt_alarm_auto bt where bt.receive_time > to_date('"+ nowtime8+"','yyyy-MM-dd HH24:mi:ss')  and bt.receive_time < to_date('"+nowtime+"','yyyy-MM-dd HH24:mi:ss')  and bt.unit_code='10' and ALARM_TYPE='1'";

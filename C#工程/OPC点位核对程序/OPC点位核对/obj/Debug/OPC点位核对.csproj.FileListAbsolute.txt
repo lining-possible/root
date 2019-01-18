@@ -1,0 +1,12 @@
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\bin\Debug\OPC点位核对.exe.config
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\bin\Debug\OPC点位核对.exe
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\bin\Debug\OPC点位核对.pdb
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.csprojResolveAssemblyReference.cache
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.Form1.resources
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.Properties.Resources.resources
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.csproj.GenerateResource.Cache
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.exe
+c:\users\ecpopcuser\documents\visual studio 2012\Projects\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.pdb
+E:\GitProgect\root\C#工程\OPC点位核对\OPC点位核对\bin\Debug\OPC点位核对.exe.config
+E:\GitProgect\root\C#工程\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.exe
+E:\GitProgect\root\C#工程\OPC点位核对\OPC点位核对\obj\Debug\OPC点位核对.pdb

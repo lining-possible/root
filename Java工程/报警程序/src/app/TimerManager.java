@@ -20,7 +20,7 @@ public class TimerManager {
     public TimerManager() {
         Calendar calendar = Calendar.getInstance();
 
-        /*** 定制每日22:10执行方法 ***/
+        /*** 定制每日8:30执行方法 ***/
 
         calendar.set(Calendar.HOUR_OF_DAY, 8);
         calendar.set(Calendar.MINUTE, 30);
@@ -30,7 +30,7 @@ public class TimerManager {
 
         //如果第一次执行定时任务的时间 小于 当前的时间
         //此时要在 第一次执行定时任务的时间 加一天，以便此任务在下个时间点执行。如果不加一天，任务会立即执行。
-        if (date.before(new Date())) {
+       if (date.before(new Date())) {
             date = this.addDay(date, 1);
         }
 

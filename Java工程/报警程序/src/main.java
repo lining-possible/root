@@ -15,7 +15,9 @@ public class main{
 
 
     public static void main(String[] args){
+       //初始化变量  从配置文件读取
         Var.init();
+        //启动定时任务
         TimerManager timerManager = new TimerManager();
 
 

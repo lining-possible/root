@@ -1,0 +1,8 @@
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\bin\Release\WHChem.OPCMonitor.exe.config
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\OPCMonitor.csproj.ResolveComReference.cache
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\OPCMonitor.csprojResolveAssemblyReference.cache
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\WHChem.OPCMonitor.ConfigForm.resources
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\WHChem.OPCMonitor.HelpForm.resources
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\WHChem.OPCMonitor.MainForm.resources
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\WHChem.OPCMonitor.Properties.Resources.resources
+E:\GitProgect\root\C#工程\OPCMonitor\OPCMonitor\obj\Release\OPCMonitor.csproj.GenerateResource.Cache

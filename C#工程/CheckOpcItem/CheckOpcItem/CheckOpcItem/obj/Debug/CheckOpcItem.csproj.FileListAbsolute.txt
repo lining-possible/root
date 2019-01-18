@@ -4,3 +4,6 @@ C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\bin\Debug\
 C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.exe
 C:\Users\Administrator\Desktop\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.pdb
+E:\GitProgect\root\C#工程\CheckOpcItem\CheckOpcItem\CheckOpcItem\bin\Debug\CheckOpcItem.exe.config
+E:\GitProgect\root\C#工程\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.exe
+E:\GitProgect\root\C#工程\CheckOpcItem\CheckOpcItem\CheckOpcItem\obj\Debug\CheckOpcItem.pdb
